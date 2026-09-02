@@ -1,5 +1,7 @@
 # 100 Days of Unvibe Coding
 
+![100 Days of Unvibe Coding](https://github.com/akshaywritescode/100-days-unvibe-coding/blob/main/thumbnail.png?raw=true)
+
 A challenge for junior developers to build real skills — no AI assistance, just you and the code.
 
 ## What is this?
@@ -25,11 +27,11 @@ AI tools are useful, but leaning on them too early skips the fundamentals. Debug
 
 ```
 100-days-unvibe-coding/
-├── day-001/
+├── day-001-qr-code-generator/
 │   ├── index.html
 │   ├── style.css
 │   └── script.js
-├── day-002/
+├── day-002-calculator/
 │   └── ...
 └── README.md
 ```
