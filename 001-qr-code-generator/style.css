@@ -1,0 +1,66 @@
+/* CSS Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.4%;
+}
+
+#container {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(80, 80, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 30rem;
+  height: 38rem;
+  background-color: white;
+  border-radius: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.2rem;
+}
+
+.input-area {
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-box {
+  height: 3rem;
+}
+
+#input {
+  height: 100%;
+  padding: 0.4rem;
+  border: 0.2rem solid rgb(80, 80, 255);
+  border-radius: 0.5rem;
+}
+
+#generate-btn {
+  padding: 0.8rem 1rem;
+  background-color: rgb(80, 80, 255);
+  color: white;
+  border: 0;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.qr-code-area {
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
