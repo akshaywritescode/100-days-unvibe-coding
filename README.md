@@ -41,7 +41,7 @@ AI tools are useful, but leaning on them too early skips the fundamentals. Debug
 ### Beginner (Days 1–30)
 | Day | Project |
 |-----|---------|
-| 001 | Tribute Page |
+| 001 | QR Code Generator |
 | 002 | Survey Form |
 | 003 | Product Landing Page |
 | 004 | Technical Documentation Page |

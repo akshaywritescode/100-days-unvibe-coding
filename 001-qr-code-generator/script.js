@@ -3,8 +3,7 @@ function GenerateURL(data) {
   return `https://api.qrserver.com/v1/create-qr-code/?data=${encodeURIComponent(data)}&size=130x130`;
 }
 
-let imageBlob;
-
+let imageUrl;
 async function fetchQR() {
   // Taking user value and passing it to GenerateURL
   const inputValue = document.getElementById("input").value;
@@ -20,12 +19,23 @@ async function fetchQR() {
 
   // Setting up image
   const imageElement = document.getElementById("qr-image");
-  imageElement.src = URL.createObjectURL(imageBlob);
+  imageUrl = URL.createObjectURL(imageBlob);
+  imageElement.src = imageUrl
 }
 
 // Generating when clicking Generate button
 document.getElementById("generate-btn").addEventListener("click", fetchQR);
 
+//Downloading functionality
+document.getElementById("download-btn").addEventListener("click", function downloadImage() {
+  const link = document.createElement("a");
+  link.href = imageUrl;
+  link.download = "my-image.jpg";
+
+  document.body.appendChild(link);
+  link.click();
+  link.remove();
+})
 
 //Run When page Reload
-fetchQR()
+fetchQR();

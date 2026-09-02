@@ -9,6 +9,7 @@
 
 html {
   font-size: 62.4%;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #container {
@@ -28,7 +29,12 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 0.2rem;
+  padding: 1rem;
+}
+
+h1 {
+  font-weight: 100;
+  margin-left: 1rem;
 }
 
 .input-area {
@@ -63,4 +69,16 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+#download-btn {
+  padding: 0.8rem 1rem;
+  background-color: rgb(80, 80, 255);
+  color: white;
+  border: 0;
+  border-radius: 0.5rem;
+  cursor: pointer;
 }
